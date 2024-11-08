@@ -1,36 +1,30 @@
 function movie() {
-    var genre = document.getElementById("genre").value;
-    var age = document.getElementById("age").value;
-var output=document.getElementById("output").value;
+    var genre = document.getElementById("genre").value
+    var age = document.getElementById("age").value
 
-    if (age=="18+" && genre == "Horror") {
-        output=("Scream")
-        console.log("Smile")
-        console.log("Scream 2")
+    var results;
+   if (age=="18+" && genre == "Horror") {
+        results = "scream <br> smile <br> Scream 2";
+      
     }
-    else if(age=="0-17" && genre=="Horror"){
-        console.log("Coraline")
-        console.log("Goosebumps")
-        console.log("Nightmare Before Christmas")
+     if(age=="0-17" && genre == "Horror"){
+      results = "Coraline <br> goosbumps <br> Nightmere before christmas";
+
     }
     if (age=="18+" && genre == "Romance") {
-        console.log("50 Shades of Gray")
-        console.log("Blue Lagoon")
-        console.log("The Proposal")
+        results = "50 shades of grey <br> Bluelagoon <br> The Proposal";
+        
     }
-    if (age=="0-17" && genre == "Romance") {
-        console.log("Cinderella Story")
-        console.log("My Girl")
-        console.log("Anyone But You")
-    }
+     if(age=="0-17" && genre == "Romance"){
+        results = "Cinderella story <br> My Girl <br> Anyone but you"
+     }
     if (age=="18+" && genre == "Comedy") {
-        console.log("Superbad")
-        console.log("Good Boys")
-        console.log("Hangover")
+        results = "Superbad <br> Hangover <br> Good Boys"
+    
     }
-    if (age=="0-17" && genre == "Comedy") {
-        console.log("Shrek")
-        console.log("Home Alone")
-        console.log("Elf")
+     if(age=="0-17" && genre == "Comedy"){
+       results = "Shrek <br> Home Alone <br> Elf"
     }
+
+    document.getElementById("output").innerHTML = results;
 }
