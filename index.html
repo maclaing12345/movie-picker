@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <!-- this is the basic desgin for the website -->
@@ -11,26 +12,29 @@
 <body>
 	<center>
 		<header>Movie Picker</header>
-    <!-- where the output will be displayed -->
+    <!-- outputbox and output id -->
  <div class="outputBox" id="outputBox">
 	<p id="output"> </p>
- </div>
+    </div>
 
 
-<!-- this lets you choose age -->
-<select  onchange="movie()" id="age" >
+<!-- this sets values for the age -->
+<select   id="age" >
     <option value="Age">Age</option>
-    <option value="0-17">0-17</option>
-    <option value="18+">18+</option>
+    <option value=17>0-17</option>
+    <option value=19>18+</option>
     </select>
-<!-- this lets you choose genre -->
-<select onchange="movie()" id="genre">
+<!-- this sets values for the genre  -->
+<select  id="genre">
     <option value="Genre">Genre</option>
     <option value="Horror">Horror</option>
     <option value="Romance">Romance</option>
     <option value="Comedy">Comedy</option>
+   
     
 </select>
+<!-- this makes the get result button -->
+<button onclick="updateScreen()">Get Results</button>
     </center>
 <script src="script.js"></script>
 </body>
