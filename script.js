@@ -39,4 +39,5 @@ function movie(age, genre) {
 function updateScreen(){
     document.getElementById("output").innerHTML = movie(document.getElementById("age").value, document.getElementById("genre").value);
 }
-
+// https://docs.google.com/document/d/1I8nDvFLrp-QvZyI1RZPlxmpFEOyzrIsf/edit
+//Google doc 
